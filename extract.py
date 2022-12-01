@@ -24,7 +24,7 @@ for protein in ppset:
 if not is_error:
     st.code(pp_protein)
     pp_protein = ""
-    for protein in protein_list.split():
+    for protein in ppset:
         pp_protein += (f"{protein[0]} (pp) {protein[1]}\n")      
     st.code(pp_protein)
 else:
