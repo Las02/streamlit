@@ -2,13 +2,20 @@
 import streamlit as st
 
 st.write("'AD' TO 'A pp D'")
+
+remove = st.checkbox('Remove the same interactions')
+
 protein_list = st.text_input("Pase in your proteins in oneletter words eg: AD CP AG CD")
+
+
 
 ppset = set()
 for protein in protein_list.split():
-    if protein not in ppset and protein[::-1] not in ppset:
+    if remove:
+        if protein not in ppset and protein[::-1] not in ppset:
+            ppset.add(protein)
+    else:
         ppset.add(protein)
-    
     
 pp_protein = ""
 is_error = False
