@@ -8,9 +8,9 @@ from urllib import request
 
 st.write('Adds "pp"')
 protein_list = st.text_input("Pase in your proteins in oneletter words eg: AD CP AG CD")
-pp_protein = []
+pp_protein = ""
 for protein in protein_list.split():
-    pp_protein.append(f"{protein[0]} pp {protein[1]}")    
+    pp_protein += (f"{protein[0]} pp {protein[1]}\n")    
 st.code(pp_protein)
 
 
