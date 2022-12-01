@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 from urllib import request
 
-st.write('Welcome to converser')
+st.write('Welcome to converser boi')
 
 #See if you can get it to auto detect!
 IN= st.selectbox("Which **input** do you wanna give?",["Accesion code","Uniprot ID"])
