@@ -7,7 +7,7 @@ import streamlit as st
 from urllib import request
 
 st.write('Adds "pp"')
-protein_list = st.text_input("Pase in your proteins in oneletter words eg: AD CP AG CD)
+protein_list = st.text_input("Pase in your proteins in oneletter words eg: AD CP AG CD")
 for protein in protein_list.split():
     st.write("protein")
 
