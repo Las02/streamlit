@@ -6,7 +6,12 @@ import numpy as np
 import streamlit as st
 from urllib import request
 
-st.write('Welcome to converser boi')
+st.write('Adds "pp"')
+protein_list = st.text_input("Pase in your proteins in oneletter words eg: AD CP AG CD)
+for protein in protein_list.split():
+    st.write("protein")
+
+
 
 #See if you can get it to auto detect!
 IN= st.selectbox("Which **input** do you wanna give?",["Accesion code","Uniprot ID"])
