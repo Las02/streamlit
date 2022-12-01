@@ -13,7 +13,7 @@ for protein in protein_list.split():
 pp_protein = ""
 is_error = False
 errors = 0
-for protein in ppset
+for protein in ppset:
     try:
         if len(protein) != 2:
             raise Exception()
