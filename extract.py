@@ -17,4 +17,4 @@ for protein in protein_list.split():
 if not is_error:
     st.code(pp_protein)
 else:
-    st.error(f"{errors} of the input is not of two chars")
+    st.error(f"{errors} of the input(s) are not of two chars")
