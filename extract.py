@@ -8,8 +8,8 @@ for protein in protein_list.split():
     try:
         if len(protein) != 2:
             raise Exception()
-  
-    except Exception:
         st.error("One or more of the input is not of two chars")
+    except Exception:
+        
     pp_protein += (f"{protein[0]} pp {protein[1]}\n")  
 st.code(pp_protein)
